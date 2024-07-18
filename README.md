@@ -16,7 +16,7 @@
 	- [x] Administrator User
 	- [x] Configure local CLI
 	- [x] Terraform S3 Bucket
-  - [x] Dynamodb
+        - [x] Dynamodb
 - [x] VPC
 	- [x] CIDRs
 	- [x] Availability zones
@@ -32,6 +32,7 @@
 	- [x] Cert-Manager
 	
 - [x] Web Applications
+     - configure appsitting to intgrate with reies 
 - [x] Databases
   - [x] SQL Server
   - [x] MongoDB
