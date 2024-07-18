@@ -13,29 +13,35 @@
   - AWS CLI: Command-line interface for AWS services.
 ### Execution checklist
 - [x] Terraform
-	- [x] Administrator User
-	- [x] Configure local CLI
-	- [x] Terraform S3 Bucket
-        - [x] Dynamodb
+	- [x] Create an Administrator User in AWS
+	- [x] Configure local CLI with the Administrator User credentials
+	- [x] Set up a Terraform S3 Bucket for state storage
+        - [x] Set up DynamoDB for state locking and consistency
 - [x] VPC
-	- [x] CIDRs
-	- [x] Availability zones
-	- [x] Infra, Private subnet, Public Subnet
-	- [x] NAT Gateway
+	- [x] Configure CIDR blocks
+	- [x] Set up two Availability Zones 
+	- [x] Intra, Private subnet, Public Subnet
+	- [x] Configure a NAT Gateway for internet access in Private subnets
 
 - [x] EKS
-	- [x] VPC-CNI and IRSA
-	- [x] Node Group
-	- [x] EBS-CSI and IRSA
+	- [x] Configure VPC-CNI and IRSA to create IAM roles allowing EKS to manage load balancers
+	- [x] Set up Node Groups with auto-scaling capabilities
+	- [x] Configure EBS-CSI and IRSA with IAM roles for persistent storage
 - [x] Plateform Applications
-	- [x] Nginx Ingress
-	- [x] Cert-Manager
+	- [x] Install Nginx Ingress Controller for external load balancing
+	- [x] Install Cert-Manager to manage and renew SSL certificates
 	
 - [x] Web Applications
-     - configure appsitting to intgrate with reies 
+     - Configure application settings to integrate with Redis
+     - Create Kubernetes manifest files for deployment
 - [x] Databases
+      - Configure database access, handling user credentials and connection endpoints
+      - Create Kubernetes manifest files including Persistent Volume Claims (PVC), Storage Classes, Secrets, Services, and Deployments for:
   - [x] SQL Server
   - [x] MongoDB
   - [x] Redis
-    
+- [x] SSL and Domain Configuration
+      - SSL Certificate: Use Let's Encrypt to generate SSL certificates.
+      - Route 53 for Manage DNS records to point to your application resources.
+
  
