@@ -1,0 +1,26 @@
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    cert-manager.io/cluster-issuer: letsencrypt-app
+   
+  name: myingress
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: petclinic.prod.app.garageeducation.org
+      http:
+        paths:
+          - backend:
+              service:
+                name: aspnet-service
+                port:
+                  number: 80
+            path: /
+            pathType: ImplementationSpecific
+  tls:
+  - hosts:
+    - app.widebottask.com
+    secretName: letsencrypt-app

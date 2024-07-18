@@ -1,0 +1,33 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aspnet-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: asp
+  template:
+    metadata:
+      labels:
+        app: asp
+    spec:
+      containers:
+        - name: aspnet-server
+          image: shriefzain/web-asp:latest
+          ports:
+            - containerPort: 80
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: aspnet-service
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    app: asp
+
