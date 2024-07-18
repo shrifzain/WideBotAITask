@@ -1,5 +1,5 @@
 # DevOps Task - widebot
-
+![image](https://github.com/shrifzain/WideBotAITask/blob/master/task-devops.jpg)
 ## Task
  - Provisioning Infrastructure as a code with terraform for Web Applications and Databases
   (MongoDB, SQL Server) and Redis for caching, with Domain Name, Certificate, and Load
