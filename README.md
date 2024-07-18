@@ -27,14 +27,14 @@
 	- [x] VPC-CNI and IRSA
 	- [x] Node Group
 	- [x] EBS-CSI and IRSA
-- [x] PlateformApplications
+- [x] Plateform Applications
 	- [x] Nginx Ingress
 	- [x] Cert-Manager
 	
-	- [x] Web Applications
-	- [x] Databases
-      - [x] SQL Server
-      - [x] MongoDB
-      - [x] Redis
+- [x] Web Applications
+- [x] Databases
+  - [x] SQL Server
+  - [x] MongoDB
+  - [x] Redis
     
  
