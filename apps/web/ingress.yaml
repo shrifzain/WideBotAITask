@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: petclinic.prod.app.garageeducation.org
+    - host: widebot.com
       http:
         paths:
           - backend:
