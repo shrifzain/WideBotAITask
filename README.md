@@ -1,5 +1,5 @@
 # depi Task - projcet
-![image](https://github.com/shrifzain/WideBotAITask/blob/master/task-devops.jpg)
+![image](https://github.com/shrifzain/WideBotAITask/blob/master/tasks-devops.jpg)
 ## Task
  - Provisioning Infrastructure as a code with terraform for Web Applications and Databases
   (MongoDB, SQL Server) and Redis for caching, with Domain Name, Certificate, and Load
