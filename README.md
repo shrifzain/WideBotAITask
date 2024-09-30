@@ -1,4 +1,4 @@
-# DevOps Task - widebot
+#depi Task - projcet
 ![image](https://github.com/shrifzain/WideBotAITask/blob/master/task-devops.jpg)
 ## Task
  - Provisioning Infrastructure as a code with terraform for Web Applications and Databases
