@@ -58,7 +58,7 @@ locals {
     Region      = data.aws_region.current.name
     Environment = var.environment
     Owner       = var.owner
-    Project     = "task-widebot"
+    Project     = "task"
     Stage       = "platform_app"
     CostCenter  = "GENERAL"
   }
